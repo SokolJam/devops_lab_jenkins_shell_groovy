@@ -14,15 +14,26 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-    <!-- One of the ways of activating REST Services is adding these lines.
-         The server is responsible for adding the corresponding servlet automatically.
-         The class org.jboss.as.quickstarts.html5rest.HelloWorld class has the
-         annotation @Path("/") to receive the REST invocation -->
-    <servlet-mapping>
-        <servlet-name>javax.ws.rs.core.Application</servlet-name>
-        <url-pattern>/hello/*</url-pattern>
-    </servlet-mapping>
-</web-app>
+<html>
+    <head><title>helloworld-ws Quickstart</title></head>
+
+    <body>
+
+    	<h1>helloworld-ws Quickstart</h1>
+    	<p>
+    	  The <i>helloworld-ws</i> quickstart demonstrates the use of <b>JAX-WS</b> in
+          Red Hat JBoss Enterprise Application Platform as a simple Hello World application.
+    	</p>
+    	<p>
+    	 There is no user interface for this quickstart. Instead, you can verify the
+         Web Service is running and deployed correctly by accessing the following URL:
+         </p>
+         <div style="margin-left: 1em;">
+         <a href="HelloWorldService?wsdl">HelloWorldService?wsdl</a>
+         </div>
+         <p>
+          This URL will display the WSDL definition for the deployed Web Service endpoint.
+    	</p>
+    </body>
+
+</html>
