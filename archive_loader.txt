@@ -1,0 +1,2 @@
+Script for upload/download to/from the Nexus is located in branch "jenkins_08_app".
+It calls "archive_loader.groovy". 
