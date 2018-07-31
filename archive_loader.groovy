@@ -22,10 +22,8 @@ username = 'Jenkins'
 password = 'Yauheni1601'
 
 name = argument.n.split("/")[-1].split(".tar")[-2]
-println(name)
 artifactId = name.split('-build')[-2]
 version = 'build-' + name.tokenize('-build')[-1]
-println("artId - ${artifactId}, ver - ${version}")
 command = [push: {->upload()}, pull: {->download()}]
 
 request = new RESTClient(server)
